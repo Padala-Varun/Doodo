@@ -1,0 +1,36 @@
+{
+  "name": "doodo",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Doodo — an AI teacher that talks while it draws on a whiteboard.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "fonts": "node scripts/build-stroke-font.mjs",
+    "smoke:openrouter": "node --env-file=.env scripts/smoke-openrouter.mjs",
+    "smoke:sarvam": "node --env-file=.env scripts/smoke-sarvam.mjs"
+  },
+  "dependencies": {
+    "@mathjax/src": "^4.1.3",
+    "next": "16.3.6",
+    "perfect-freehand": "1.2.3",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "roughjs": "4.6.6",
+    "sharp": "0.35.5",
+    "zod": "4.6.5",
+    "zustand": "5.0.15"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "^19",
+    "playwright-core": "^1.63.0",
+    "typescript": "5.9.3",
+    "vitest": "5.0.2"
+  }
+}
